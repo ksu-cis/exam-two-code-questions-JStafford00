@@ -44,7 +44,6 @@ namespace ExamTwoCodeQuestions.Data
             set
             {
                 blueBerry = value;
-                this.Fruit = FruitFilling.Blueberry;
             }
         }
 
@@ -61,7 +60,6 @@ namespace ExamTwoCodeQuestions.Data
             set
             {
                 cherry = value;
-                this.Fruit = FruitFilling.Cherry;
             }
         }
 
@@ -78,7 +76,6 @@ namespace ExamTwoCodeQuestions.Data
             set
             {
                 peach = value;
-                this.Fruit = FruitFilling.Peach;
             }
         }
 
