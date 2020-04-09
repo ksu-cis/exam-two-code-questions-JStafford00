@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ExamTwoCodeQuestions.Data;
 
 namespace ExamTwoQuestions.PointOfSale
 {
@@ -23,6 +24,7 @@ namespace ExamTwoQuestions.PointOfSale
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new Cobbler();
         }
     }
 }

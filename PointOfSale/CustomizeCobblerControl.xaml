@@ -6,7 +6,24 @@
              xmlns:local="clr-namespace:ExamTwoQuestions.PointOfSale"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <Style TargetType="RadioButton">
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+    </UserControl.Resources>
+    
     <Grid>
-        <TextBlock>Customize Cobbler</TextBlock>
+        <StackPanel>
+            <TextBlock FontSize="50">Customize Cobbler</TextBlock>
+            <GroupBox Header="Fruit Filling" FontSize="30" BorderBrush="Black">
+                <StackPanel>
+                    <RadioButton Tag="BlueBerry" Click="RadioButtonClick" IsChecked="{Binding Path=BlueBerry}">BlueBerry</RadioButton>
+                    <RadioButton Tag="Cherry" Click="RadioButtonClick" IsChecked="{Binding Path=Cherry}">Cherry</RadioButton>
+                    <RadioButton Tag="Peach" Click="RadioButtonClick" IsChecked="{Binding Path=Peach}">Peach</RadioButton>
+                </StackPanel>
+            </GroupBox>
+            <CheckBox FontSize="30" VerticalContentAlignment="Center" IsChecked="{Binding Path=WithIceCream}">With Ice Cream</CheckBox>
+        </StackPanel>
     </Grid>
 </UserControl>
